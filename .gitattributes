@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize line endings: check out with LF everywhere so shell scripts
+# (e.g. android/gradlew) work on the Linux GitHub Actions runners.
+* text=auto eol=lf
+
+*.bat        text eol=crlf
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.gif        binary
+*.ico        binary
+*.jar        binary
+*.keystore   binary
+*.jks        binary
